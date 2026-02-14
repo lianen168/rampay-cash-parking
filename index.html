@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RamPay.cash - The Ultimate Web3 Payment Gateway Domain for Sale</title>
-    <meta name="description" content="Premium Domain Name For Sale: RamPay.cash. The perfect brand for Web3 on-ramps, off-ramps, DeFi liquidity, and next-gen payment solutions. Secure this asset today.">
-    <meta name="keywords" content="rampay, crypto ramp, fiat on-ramp, web3 payments, domain for sale, crypto domain, blockchain payments, fintech branding">
-    <meta name="author" content="RamPay.cash Owner">
+    <title>RamPay.cash - The Bridge to Web3 Economy</title>
+    <meta name="description" content="Premium Domain Name For Sale: RamPay.cash. The essential bridge between Fiat and Crypto.">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rampay.cash/">
-    <meta property="og:title" content="RamPay.cash - Bridge Fiat to Future">
-    <meta property="og:description" content="Premium Web3 Domain Asset. $369 USD. Buy now or lease.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="RamPay.cash - Premium Web3 Domain">
+    <meta property="og:description" content="Bridge Fiat to Future. $369 USD.">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="RamPay.cash - Premium Web3 Domain">
-    <meta property="twitter:description" content="The ultimate branding for the future of payments.">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
@@ -28,18 +19,16 @@
             --bg-color: #050505;
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
-            --accent-ramp: #00ff9d; /* Neon Green for Ramp/Action */
-            --accent-cash: #ffd700; /* Gold for Cash/Value */
+            --accent-ramp: #00ff9d; /* Neon Green */
+            --accent-cash: #ffd700; /* Gold */
             --glass-bg: rgba(255, 255, 255, 0.03);
             --glass-border: rgba(255, 255, 255, 0.1);
-            --card-hover: rgba(0, 255, 157, 0.05);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            cursor: none; /* Custom cursor */
         }
 
         body {
@@ -48,26 +37,6 @@
             font-family: 'Rajdhani', sans-serif;
             overflow-x: hidden;
             line-height: 1.6;
-        }
-
-        /* Custom Cursor */
-        #cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            border: 1px solid var(--accent-ramp);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-            transition: width 0.2s, height 0.2s, background 0.2s;
-            mix-blend-mode: difference;
-        }
-        #cursor.hovered {
-            width: 50px;
-            height: 50px;
-            background: rgba(0, 255, 157, 0.2);
-            border-color: var(--accent-cash);
         }
 
         /* Particle Background Canvas */
@@ -81,7 +50,6 @@
             opacity: 0.6;
         }
 
-        /* Layout */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -98,7 +66,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding-top: 60px;
+            padding-top: 40px;
         }
 
         .domain-name-wrapper {
@@ -107,11 +75,38 @@
             font-weight: 900;
             letter-spacing: -2px;
             line-height: 1.1;
-            margin-bottom: 2rem;
-            position: relative;
+            margin-bottom: 1rem;
         }
 
-        /* Dynamic Font Effect 1: RAMPAY (Glitch/Data Flow) */
+        /* Definition Box */
+        .def-box {
+            background: rgba(0, 255, 157, 0.05);
+            border-left: 3px solid var(--accent-ramp);
+            padding: 15px 25px;
+            margin: 20px auto 40px;
+            max-width: 600px;
+            text-align: left;
+            font-family: 'Rajdhani', sans-serif;
+        }
+        .def-term {
+            color: var(--accent-ramp);
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .def-phonetic {
+            color: #666;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        .def-meaning {
+            color: #ddd;
+            margin-top: 5px;
+            font-size: 1.1rem;
+        }
+
+        /* Dynamic Font Effect 1: RAMPAY */
         .rampay-text {
             color: #fff;
             position: relative;
@@ -140,7 +135,7 @@
             animation: glitch-anim2 5s infinite linear alternate-reverse;
         }
 
-        /* Dynamic Font Effect 2: .CASH (Shine/Gold Fluid) */
+        /* Dynamic Font Effect 2: .CASH */
         .cash-text {
             color: transparent;
             background: linear-gradient(110deg, #b88a00 10%, #ffeaa7 30%, #ffd700 40%, #b88a00 60%);
@@ -148,28 +143,10 @@
             -webkit-background-clip: text;
             background-clip: text;
             animation: shine 3s linear infinite;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .status-badge {
-            display: inline-block;
-            padding: 8px 16px;
-            border: 1px solid var(--accent-ramp);
-            color: var(--accent-ramp);
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            background: rgba(0, 255, 157, 0.1);
-            backdrop-filter: blur(5px);
-            border-radius: 4px;
         }
 
-        /* Value Proposition Grid */
-        .use-cases {
-            padding: 80px 0;
-        }
+        /* Grid & Cards */
+        .use-cases { padding: 60px 0; }
         .section-title {
             text-align: center;
             font-family: 'Orbitron', sans-serif;
@@ -190,9 +167,7 @@
             border: 1px solid var(--glass-border);
             padding: 30px;
             border-radius: 12px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -200,9 +175,8 @@
         }
         .card:hover {
             transform: translateY(-5px);
-            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(0,255,157,0.05) 100%);
             border-color: var(--accent-ramp);
-            box-shadow: 0 10px 30px -10px rgba(0, 255, 157, 0.2);
+            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(0,255,157,0.05) 100%);
         }
 
         .card h3 {
@@ -211,240 +185,122 @@
             margin-top: 15px;
             color: #fff;
         }
-        .card p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-top: 8px;
-        }
+        .card p { font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px; }
 
-        /* Abstract CSS Animations for Cards */
-        .anim-box {
-            width: 50px;
-            height: 50px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        /* Animation Containers */
+        .anim-box { width: 50px; height: 50px; position: relative; display: flex; justify-content: center; align-items: center; }
         
-        /* 1. Fiat On-Ramp: Arrow up/in */
+        /* CSS Animations for Icons */
         .anim-ramp .arrow { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 15px solid var(--accent-ramp); animation: bounce-up 1.5s infinite; }
-        /* 2. Crypto Off-Ramp: Arrow down/out */
         .anim-offramp .arrow { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 15px solid var(--accent-cash); animation: bounce-down 1.5s infinite; }
-        /* 3. DeFi: Rotating Square */
         .anim-defi .shape { width: 20px; height: 20px; border: 2px solid var(--accent-ramp); animation: rotate-sq 3s infinite linear; }
-        /* 4. Bridge: Connecting dots */
-        .anim-bridge .dots { display: flex; gap: 5px; }
-        .anim-bridge .dot { width: 6px; height: 6px; background: #fff; border-radius: 50%; animation: pulse 1s infinite alternate; }
-        .anim-bridge .dot:nth-child(2) { animation-delay: 0.2s; }
-        .anim-bridge .dot:nth-child(3) { animation-delay: 0.4s; }
-        /* 5. Smart Contracts: Document lines */
+        .anim-bridge .dots { display: flex; gap: 5px; } .anim-bridge .dot { width: 6px; height: 6px; background: #fff; border-radius: 50%; animation: pulse 1s infinite alternate; } .anim-bridge .dot:nth-child(2) { animation-delay: 0.2s; } .anim-bridge .dot:nth-child(3) { animation-delay: 0.4s; }
         .anim-contract .line { width: 30px; height: 2px; background: var(--text-secondary); margin: 4px 0; animation: expand 2s infinite; }
-        /* 6. Stablecoin: Circle steady */
-        .anim-stable .circle { width: 24px; height: 24px; border: 2px solid var(--accent-cash); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-        .anim-stable .inner { width: 8px; height: 8px; background: var(--accent-cash); animation: pulse-steady 2s infinite; }
-        /* 7. NFT Payment: Grid flash */
-        .anim-nft { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-        .anim-nft .sq { width: 10px; height: 10px; background: #333; animation: flash-grid 2s infinite; }
-        /* 8. Web3 Wallet: Rect lock */
-        .anim-wallet .rect { width: 30px; height: 20px; border: 2px solid var(--accent-ramp); border-radius: 4px; position: relative; }
-        .anim-wallet .rect::after { content:''; position: absolute; right: -2px; top: 6px; width: 4px; height: 8px; background: #fff; }
-        /* 9. P2P Exchange: Arrows swap */
-        .anim-p2p { position: relative; width: 40px; height: 20px; }
-        .anim-p2p .a1 { position: absolute; top:0; left:0; width: 20px; height: 2px; background: var(--accent-ramp); transform: translateX(0); animation: slide-right 1.5s infinite; }
-        .anim-p2p .a2 { position: absolute; bottom:0; right:0; width: 20px; height: 2px; background: var(--accent-cash); transform: translateX(0); animation: slide-left 1.5s infinite; }
-        /* 10. DAO Treasury: Hexagon */
-        .anim-dao .hex { width: 26px; height: 15px; background: var(--accent-cash); position: relative; animation: pulse 3s infinite; }
-        .anim-dao .hex:before, .anim-dao .hex:after { content: ""; position: absolute; width: 0; border-left: 13px solid transparent; border-right: 13px solid transparent; }
-        .anim-dao .hex:before { bottom: 100%; border-bottom: 8px solid var(--accent-cash); }
-        .anim-dao .hex:after { top: 100%; border-top: 8px solid var(--accent-cash); }
-        /* 11. Merchant API: Nodes */
-        .anim-api .node { width: 8px; height: 8px; background: var(--accent-ramp); border-radius: 50%; position: absolute; }
-        .anim-api .node.c { top: 20px; left: 20px; }
-        .anim-api .node.t { top: 5px; left: 20px; animation: orbit 2s infinite; }
-        /* 12. Token Swap: Circle rotate */
+        .anim-stable .circle { width: 24px; height: 24px; border: 2px solid var(--accent-cash); border-radius: 50%; display: flex; align-items: center; justify-content: center; } .anim-stable .inner { width: 8px; height: 8px; background: var(--accent-cash); animation: pulse-steady 2s infinite; }
+        .anim-nft { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; } .anim-nft .sq { width: 10px; height: 10px; background: #333; animation: flash-grid 2s infinite; }
+        .anim-wallet .rect { width: 30px; height: 20px; border: 2px solid var(--accent-ramp); border-radius: 4px; position: relative; } .anim-wallet .rect::after { content:''; position: absolute; right: -2px; top: 6px; width: 4px; height: 8px; background: #fff; }
+        .anim-p2p { position: relative; width: 40px; height: 20px; } .anim-p2p .a1 { position: absolute; top:0; left:0; width: 20px; height: 2px; background: var(--accent-ramp); transform: translateX(0); animation: slide-right 1.5s infinite; } .anim-p2p .a2 { position: absolute; bottom:0; right:0; width: 20px; height: 2px; background: var(--accent-cash); transform: translateX(0); animation: slide-left 1.5s infinite; }
+        .anim-dao .hex { width: 26px; height: 15px; background: var(--accent-cash); position: relative; animation: pulse 3s infinite; } .anim-dao .hex:before, .anim-dao .hex:after { content: ""; position: absolute; width: 0; border-left: 13px solid transparent; border-right: 13px solid transparent; } .anim-dao .hex:before { bottom: 100%; border-bottom: 8px solid var(--accent-cash); } .anim-dao .hex:after { top: 100%; border-top: 8px solid var(--accent-cash); }
+        .anim-api .node { width: 8px; height: 8px; background: var(--accent-ramp); border-radius: 50%; position: absolute; } .anim-api .node.c { top: 20px; left: 20px; } .anim-api .node.t { top: 5px; left: 20px; animation: orbit 2s infinite; }
         .anim-swap { width: 30px; height: 30px; border: 2px solid transparent; border-top: 2px solid var(--accent-cash); border-bottom: 2px solid var(--accent-ramp); border-radius: 50%; animation: spin 1s infinite linear; }
 
-        /* Pricing Section */
+        /* Pricing */
         .pricing-section {
             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,255,157,0.02) 50%, rgba(0,0,0,0) 100%);
             padding: 80px 0;
             text-align: center;
         }
-        
         .price-card {
-            background: rgba(10, 10, 10, 0.8);
+            background: rgba(10, 10, 10, 0.9);
             border: 1px solid var(--accent-ramp);
             display: inline-block;
             padding: 40px 60px;
             border-radius: 20px;
             box-shadow: 0 0 50px rgba(0, 255, 157, 0.1);
-            position: relative;
         }
-        .price-card::before {
-            content: "AVAILABLE NOW";
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--bg-color);
-            border: 1px solid var(--accent-ramp);
-            padding: 4px 12px;
-            font-size: 0.7rem;
-            color: var(--accent-ramp);
-            letter-spacing: 2px;
-        }
-
-        .price {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4rem;
-            color: var(--text-primary);
-            margin: 10px 0;
-        }
-        .installments {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
+        .price { font-family: 'Orbitron', sans-serif; font-size: 4rem; color: var(--text-primary); margin: 10px 0; }
+        .installments { color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 30px; }
         .installments span { color: var(--accent-cash); }
 
-        .cta-group {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
         .btn {
-            padding: 18px 40px;
+            padding: 16px 36px;
             border-radius: 50px;
             font-family: 'Orbitron', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
             text-decoration: none;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            margin: 5px;
+            cursor: pointer;
         }
+        .btn-primary { background: var(--accent-ramp); color: #000; }
+        .btn-primary:hover { background: #00d683; box-shadow: 0 0 30px rgba(0, 255, 157, 0.4); }
+        .btn-secondary { background: transparent; border: 2px solid #333; color: #fff; }
+        .btn-secondary:hover { border-color: var(--accent-cash); color: var(--accent-cash); }
+        .btn-secondary.copied { border-color: var(--accent-ramp); color: var(--accent-ramp); }
 
-        .btn-primary {
-            background: var(--accent-ramp);
-            color: #000;
-            box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
-            border: 2px solid var(--accent-ramp);
-        }
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--accent-ramp);
-            box-shadow: 0 0 40px rgba(0, 255, 157, 0.6);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            border: 2px solid var(--text-secondary);
-            color: var(--text-primary);
-        }
-        .btn-secondary:hover {
-            border-color: var(--accent-cash);
-            color: var(--accent-cash);
-        }
-        .btn-secondary.copied {
-            border-color: var(--accent-ramp);
-            color: var(--accent-ramp);
-        }
-        .btn-secondary.copied::after {
-            content: "COPIED";
-            position: absolute;
-            background: var(--bg-color);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Disclaimer Footer */
+        /* Footer */
         footer {
-            padding: 60px 20px;
+            padding: 40px 20px;
             border-top: 1px solid #1a1a1a;
-            margin-top: 60px;
-            color: #444;
-            font-size: 0.8rem;
-            text-align: left;
+            margin-top: 40px;
+            color: #555;
+            font-size: 0.75rem;
+            text-align: center;
         }
-        .disclaimer h4 { color: #666; margin-bottom: 10px; font-family: 'Orbitron', sans-serif; }
-        .disclaimer p { margin-bottom: 15px; max-width: 800px; }
-
+        
         /* Keyframes */
-        @keyframes glitch-skew {
-            0% { transform: skew(0deg); }
-            20% { transform: skew(-2deg); }
-            40% { transform: skew(2deg); }
-            60% { transform: skew(0deg); }
-            100% { transform: skew(0deg); }
-        }
-        @keyframes glitch-anim {
-            0% { clip: rect(44px, 9999px, 56px, 0); }
-            5% { clip: rect(20px, 9999px, 80px, 0); }
-            100% { clip: rect(44px, 9999px, 56px, 0); }
-        }
-        @keyframes glitch-anim2 {
-            0% { clip: rect(10px, 9999px, 90px, 0); }
-            5% { clip: rect(80px, 9999px, 20px, 0); }
-            100% { clip: rect(10px, 9999px, 90px, 0); }
-        }
-        @keyframes shine {
-            to { background-position: 200% center; }
-        }
+        @keyframes glitch-skew { 0%, 100% { transform: skew(0deg); } 20% { transform: skew(-2deg); } 40% { transform: skew(2deg); } }
+        @keyframes glitch-anim { 0%, 100% { clip: rect(44px, 9999px, 56px, 0); } 5% { clip: rect(20px, 9999px, 80px, 0); } }
+        @keyframes glitch-anim2 { 0%, 100% { clip: rect(10px, 9999px, 90px, 0); } 5% { clip: rect(80px, 9999px, 20px, 0); } }
+        @keyframes shine { to { background-position: 200% center; } }
         @keyframes bounce-up { 0%, 100% { transform: translateY(5px); opacity: 0.5; } 50% { transform: translateY(-5px); opacity: 1; } }
         @keyframes bounce-down { 0%, 100% { transform: translateY(-5px); opacity: 0.5; } 50% { transform: translateY(5px); opacity: 1; } }
-        @keyframes rotate-sq { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes rotate-sq { to { transform: rotate(360deg); } }
         @keyframes pulse { 0% { opacity: 0.3; } 100% { opacity: 1; } }
         @keyframes pulse-steady { 0% { transform: scale(0.8); } 50% { transform: scale(1.2); } 100% { transform: scale(0.8); } }
         @keyframes expand { 0% { width: 10px; } 50% { width: 30px; } 100% { width: 10px; } }
-        @keyframes flash-grid { 0%, 100% { background: #333; } 50% { background: var(--accent-cash); } }
+        @keyframes flash-grid { 50% { background: var(--accent-cash); } }
         @keyframes spin { to { transform: rotate(360deg); } }
         @keyframes slide-right { 0% { left: 0; opacity: 1; } 100% { left: 20px; opacity: 0; } }
         @keyframes slide-left { 0% { right: 0; opacity: 1; } 100% { right: 20px; opacity: 0; } }
         @keyframes orbit { 0% { transform: rotate(0deg) translateX(10px) rotate(0deg); } 100% { transform: rotate(360deg) translateX(10px) rotate(-360deg); } }
 
         @media (max-width: 768px) {
-            .domain-name-wrapper { font-size: 12vw; }
-            .grid { grid-template-columns: 1fr 1fr; }
+            .domain-name-wrapper { font-size: 13vw; }
             .price { font-size: 3rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Custom Cursor Element -->
-    <div id="cursor"></div>
-
-    <!-- Particle Background -->
+    <!-- Background -->
     <div id="canvas-container"></div>
 
     <main class="container">
-        <!-- Header Section -->
+        <!-- Hero -->
         <header>
-            <div class="status-badge">PREMIUM ASSET FOR SALE</div>
             <h1 class="domain-name-wrapper">
                 <span class="rampay-text" data-text="RAMPAY">RAMPAY</span><span class="cash-text">.CASH</span>
             </h1>
-            <p style="color: #888; max-width: 600px; margin: 0 auto;">
-                The definitive domain for the next generation of Web3 liquidity. 
-                Seamlessly blending <span style="color:var(--accent-ramp)">Ramp</span> mechanics with real-world <span style="color:var(--accent-cash)">Cash</span>.
-            </p>
+            
+            <!-- DEFINITION SECTION -->
+            <div class="def-box">
+                <div>
+                    <span class="def-term">Ramp</span>
+                    <span class="def-phonetic">/ramp/ • noun</span>
+                </div>
+                <div class="def-meaning">
+                    In Web3 context: The critical infrastructure bridge that allows users to convert Fiat currency (USD, EUR) into Crypto assets (On-Ramp) and vice versa (Off-Ramp).
+                </div>
+            </div>
         </header>
 
-        <!-- Use Cases / Areas -->
+        <!-- Use Cases -->
         <section class="use-cases">
-            <div class="section-title">
-                UNLOCK <span>12</span> WEB3 PAYMENT VERTICALS
-            </div>
+            <div class="section-title"><span>12</span> WEB3 VERTICALS</div>
             <div class="grid">
                 <!-- 1. Fiat On-Ramp -->
                 <div class="card">
@@ -476,13 +332,13 @@
                     <h3>Smart Payments</h3>
                     <p>Programmable money flows.</p>
                 </div>
-                <!-- 6. Stablecoin Gateway -->
+                <!-- 6. Stablecoin Hub -->
                 <div class="card">
                     <div class="anim-box anim-stable"><div class="circle"><div class="inner"></div></div></div>
                     <h3>Stablecoin Hub</h3>
                     <p>Pegged currency management.</p>
                 </div>
-                <!-- 7. NFT Marketplace -->
+                <!-- 7. NFT Checkout -->
                 <div class="card">
                     <div class="anim-box anim-nft"><div class="sq"></div><div class="sq"></div><div class="sq"></div><div class="sq"></div></div>
                     <h3>NFT Checkout</h3>
@@ -512,7 +368,7 @@
                     <h3>Merchant API</h3>
                     <p>Plug-and-play crypto checkout.</p>
                 </div>
-                <!-- 12. Token Swaps -->
+                <!-- 12. Instant Swaps -->
                 <div class="card">
                     <div class="anim-box anim-swap"></div>
                     <h3>Instant Swaps</h3>
@@ -521,64 +377,45 @@
             </div>
         </section>
 
-        <!-- Pricing & CTA -->
+        <!-- Pricing -->
         <section class="pricing-section">
             <div class="price-card">
                 <div class="price">$369</div>
                 <div class="installments">Pay in full or <span>3 monthly installments</span></div>
                 
-                <div class="cta-group">
-                    <a href="https://www.spaceship.com/s/buy/rampay.cash/HXMwTAPGp00Cw1WL" target="_blank" class="btn btn-primary" rel="noopener noreferrer">
-                        <span>⚡ Buy Now on Spaceship</span>
+                <div style="margin-top:20px;">
+                    <a href="https://www.spaceship.com/s/buy/rampay.cash/HXMwTAPGp00Cw1WL" target="_blank" class="btn btn-primary">
+                        ⚡ Buy Now on Spaceship
                     </a>
                     <button class="btn btn-secondary" onclick="copyEmail(this)">
-                        <span>✉️ Contact Seller</span>
+                        ✉️ Contact Seller
                     </button>
                 </div>
             </div>
         </section>
 
-        <!-- Disclaimer -->
-        <footer class="disclaimer">
-            <div class="container">
-                <h4>Legal Disclaimer & Terms of Use</h4>
-                <p><strong>Nature of Sale:</strong> This website acts solely as a landing page for the sale of the domain name "rampay.cash" (the "Domain"). The sale is strictly for the transfer of the domain registration rights. No business, trademark, software, customer lists, or other intellectual property associated with any potential previous usage of this domain is included in this transaction unless explicitly stated in a separate written agreement.</p>
-                <p><strong>No Affiliation:</strong> "rampay.cash" is an independent domain name. It is not affiliated, associated, authorized, endorsed by, or in any way officially connected with any existing company, payment processor, "RAMP" protocol, or "Cash" app entity. Any resemblance to existing brands is purely coincidental. Potential buyers are advised to conduct their own trademark research in their respective jurisdictions.</p>
-                <p><strong>Liability:</strong> The seller assumes no responsibility for how the buyer chooses to use this domain after the transfer is complete. The buyer agrees to indemnify and hold harmless the seller from any claims arising from the use of the Domain.</p>
-                <p>Copyright © 2024 RamPay.cash. All rights reserved.</p>
-            </div>
+        <!-- Concise Disclaimer -->
+        <footer>
+            <p><strong>Disclaimer:</strong> This site facilitates the sale of the domain name "rampay.cash" only. We are not affiliated with any existing "Ramp" or "Cash" brands, protocols, or financial institutions. Buyer assumes full responsibility for trademark diligence and future use.</p>
+            <p style="margin-top:10px; opacity:0.6;">© 2024 RamPay.cash Domain Sales.</p>
         </footer>
     </main>
 
     <script>
-        // Custom Cursor Logic
-        const cursor = document.getElementById('cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
-
-        document.querySelectorAll('a, button, .card').forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
-            el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
-        });
-
-        // Email Copy Logic
         function copyEmail(btn) {
             const email = "joshua369x@gmail.com";
             navigator.clipboard.writeText(email).then(() => {
                 const originalText = btn.innerHTML;
                 btn.classList.add('copied');
+                btn.innerHTML = "✅ Email Copied!";
                 setTimeout(() => {
                     btn.classList.remove('copied');
                     btn.innerHTML = originalText;
                 }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
             });
         }
 
-        // Particle System for Background
+        // Lightweight Particle System
         const canvasContainer = document.getElementById('canvas-container');
         const canvas = document.createElement('canvas');
         canvasContainer.appendChild(canvas);
@@ -601,17 +438,14 @@
                 this.vx = (Math.random() - 0.5) * 0.5;
                 this.vy = (Math.random() - 0.5) * 0.5;
                 this.size = Math.random() * 2;
-                this.color = Math.random() > 0.5 ? 'rgba(0, 255, 157, ' : 'rgba(255, 215, 0, '; // Ramp Green or Cash Gold
+                this.color = Math.random() > 0.5 ? 'rgba(0, 255, 157, ' : 'rgba(255, 215, 0, ';
             }
-
             update() {
                 this.x += this.vx;
                 this.y += this.vy;
-
                 if (this.x < 0 || this.x > width) this.vx *= -1;
                 if (this.y < 0 || this.y > height) this.vy *= -1;
             }
-
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -622,25 +456,16 @@
 
         function initParticles() {
             particles = [];
-            for (let i = 0; i < 80; i++) {
-                particles.push(new Particle());
-            }
+            for (let i = 0; i < 60; i++) particles.push(new Particle());
         }
-
         function animateParticles() {
             ctx.clearRect(0, 0, width, height);
-            
-            // Draw connections
             particles.forEach((p, index) => {
                 p.update();
                 p.draw();
-                
                 for (let j = index + 1; j < particles.length; j++) {
                     const p2 = particles[j];
-                    const dx = p.x - p2.x;
-                    const dy = p.y - p2.y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-
+                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
                     if (dist < 150) {
                         ctx.beginPath();
                         ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 - dist/1500})`;
@@ -653,7 +478,6 @@
             });
             requestAnimationFrame(animateParticles);
         }
-
         initParticles();
         animateParticles();
     </script>
