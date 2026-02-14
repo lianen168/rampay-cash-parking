@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RamPay.cash - The Bridge to Web3 Economy</title>
-    <meta name="description" content="Premium Domain Name For Sale: RamPay.cash. The essential bridge between Fiat and Crypto.">
+    <meta name="description" content="Premium Domain Name For Sale: RamPay.cash. The essential bridge between Fiat and Crypto. Buy now or make an offer.">
     
     <!-- Open Graph -->
     <meta property="og:title" content="RamPay.cash - Premium Web3 Domain">
     <meta property="og:description" content="Bridge Fiat to Future. $369 USD.">
+    <meta property="og:url" content="https://rampay.cash/">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +24,8 @@
             --accent-cash: #ffd700; /* Gold */
             --glass-bg: rgba(255, 255, 255, 0.03);
             --glass-border: rgba(255, 255, 255, 0.1);
+            --success: #00ff9d;
+            --error: #ff4757;
         }
 
         * {
@@ -87,6 +90,7 @@
             max-width: 600px;
             text-align: left;
             font-family: 'Rajdhani', sans-serif;
+            backdrop-filter: blur(5px);
         }
         .def-term {
             color: var(--accent-ramp);
@@ -204,20 +208,42 @@
         .anim-api .node { width: 8px; height: 8px; background: var(--accent-ramp); border-radius: 50%; position: absolute; } .anim-api .node.c { top: 20px; left: 20px; } .anim-api .node.t { top: 5px; left: 20px; animation: orbit 2s infinite; }
         .anim-swap { width: 30px; height: 30px; border: 2px solid transparent; border-top: 2px solid var(--accent-cash); border-bottom: 2px solid var(--accent-ramp); border-radius: 50%; animation: spin 1s infinite linear; }
 
-        /* Pricing */
-        .pricing-section {
-            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,255,157,0.02) 50%, rgba(0,0,0,0) 100%);
+        /* Pricing & Action Section */
+        .action-zone {
             padding: 80px 0;
-            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: stretch;
         }
+
+        /* Price Card */
         .price-card {
             background: rgba(10, 10, 10, 0.9);
             border: 1px solid var(--accent-ramp);
-            display: inline-block;
-            padding: 40px 60px;
+            padding: 40px;
             border-radius: 20px;
             box-shadow: 0 0 50px rgba(0, 255, 157, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            position: relative;
         }
+        .price-card::before {
+            content: "AVAILABLE NOW";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            border: 1px solid var(--accent-ramp);
+            padding: 4px 12px;
+            font-size: 0.7rem;
+            color: var(--accent-ramp);
+            letter-spacing: 2px;
+        }
+
         .price { font-family: 'Orbitron', sans-serif; font-size: 4rem; color: var(--text-primary); margin: 10px 0; }
         .installments { color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 30px; }
         .installments span { color: var(--accent-cash); }
@@ -233,14 +259,70 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin: 5px;
+            margin: 5px 0;
             cursor: pointer;
+            width: 100%;
         }
         .btn-primary { background: var(--accent-ramp); color: #000; }
         .btn-primary:hover { background: #00d683; box-shadow: 0 0 30px rgba(0, 255, 157, 0.4); }
         .btn-secondary { background: transparent; border: 2px solid #333; color: #fff; }
         .btn-secondary:hover { border-color: var(--accent-cash); color: var(--accent-cash); }
-        .btn-secondary.copied { border-color: var(--accent-ramp); color: var(--accent-ramp); }
+
+        /* Offer Form */
+        .offer-box {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid #333;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .offer-box h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .offer-box p {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group { margin-bottom: 15px; }
+        .offer-input {
+            width: 100%;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .offer-input:focus {
+            outline: none;
+            border-color: var(--accent-cash); /* Gold focus */
+            background: rgba(255, 215, 0, 0.05);
+        }
+        
+        .btn-submit {
+            background: transparent;
+            border: 1px solid #555;
+            color: #fff;
+        }
+        .btn-submit:hover {
+            border-color: var(--accent-ramp);
+            color: var(--accent-ramp);
+            background: rgba(0, 255, 157, 0.05);
+        }
+
+        #form-status { margin-top: 15px; font-size: 0.9rem; display: none; }
+        .status-success { color: var(--success); }
+        .status-error { color: var(--error); }
+
 
         /* Footer */
         footer {
@@ -272,6 +354,7 @@
         @media (max-width: 768px) {
             .domain-name-wrapper { font-size: 13vw; }
             .price { font-size: 3rem; }
+            .action-zone { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -302,96 +385,63 @@
         <section class="use-cases">
             <div class="section-title"><span>12</span> WEB3 VERTICALS</div>
             <div class="grid">
-                <!-- 1. Fiat On-Ramp -->
-                <div class="card">
-                    <div class="anim-box anim-ramp"><div class="arrow"></div></div>
-                    <h3>Fiat On-Ramp</h3>
-                    <p>Gateway for traditional currency entry.</p>
-                </div>
-                <!-- 2. Crypto Off-Ramp -->
-                <div class="card">
-                    <div class="anim-box anim-offramp"><div class="arrow"></div></div>
-                    <h3>Crypto Off-Ramp</h3>
-                    <p>Seamless liquidity exit strategies.</p>
-                </div>
-                <!-- 3. DeFi Liquidity -->
-                <div class="card">
-                    <div class="anim-box anim-defi"><div class="shape"></div></div>
-                    <h3>DeFi Liquidity</h3>
-                    <p>Automated market maker integration.</p>
-                </div>
-                <!-- 4. Cross-Chain Bridge -->
-                <div class="card">
-                    <div class="anim-box anim-bridge"><div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>
-                    <h3>Cross-Chain Bridge</h3>
-                    <p>Interoperable asset transfers.</p>
-                </div>
-                <!-- 5. Smart Contracts -->
-                <div class="card">
-                    <div class="anim-box anim-contract"><div class="line"></div><div class="line"></div><div class="line"></div></div>
-                    <h3>Smart Payments</h3>
-                    <p>Programmable money flows.</p>
-                </div>
-                <!-- 6. Stablecoin Hub -->
-                <div class="card">
-                    <div class="anim-box anim-stable"><div class="circle"><div class="inner"></div></div></div>
-                    <h3>Stablecoin Hub</h3>
-                    <p>Pegged currency management.</p>
-                </div>
-                <!-- 7. NFT Checkout -->
-                <div class="card">
-                    <div class="anim-box anim-nft"><div class="sq"></div><div class="sq"></div><div class="sq"></div><div class="sq"></div></div>
-                    <h3>NFT Checkout</h3>
-                    <p>Instant digital asset purchasing.</p>
-                </div>
-                <!-- 8. Web3 Wallet -->
-                <div class="card">
-                    <div class="anim-box anim-wallet"><div class="rect"></div></div>
-                    <h3>Wallet Connect</h3>
-                    <p>Universal dApp authentication.</p>
-                </div>
-                <!-- 9. P2P Exchange -->
-                <div class="card">
-                    <div class="anim-box anim-p2p"><div class="a1"></div><div class="a2"></div></div>
-                    <h3>P2P Exchange</h3>
-                    <p>Direct peer-to-peer trading.</p>
-                </div>
-                <!-- 10. DAO Treasury -->
-                <div class="card">
-                    <div class="anim-box anim-dao"><div class="hex"></div></div>
-                    <h3>DAO Treasury</h3>
-                    <p>Decentralized fund governance.</p>
-                </div>
-                <!-- 11. Merchant API -->
-                <div class="card">
-                    <div class="anim-box anim-api"><div class="node c"></div><div class="node t"></div></div>
-                    <h3>Merchant API</h3>
-                    <p>Plug-and-play crypto checkout.</p>
-                </div>
-                <!-- 12. Instant Swaps -->
-                <div class="card">
-                    <div class="anim-box anim-swap"></div>
-                    <h3>Instant Swaps</h3>
-                    <p>Low latency token conversion.</p>
-                </div>
+                <div class="card"><div class="anim-box anim-ramp"><div class="arrow"></div></div><h3>Fiat On-Ramp</h3><p>Gateway for traditional currency entry.</p></div>
+                <div class="card"><div class="anim-box anim-offramp"><div class="arrow"></div></div><h3>Crypto Off-Ramp</h3><p>Seamless liquidity exit strategies.</p></div>
+                <div class="card"><div class="anim-box anim-defi"><div class="shape"></div></div><h3>DeFi Liquidity</h3><p>Automated market maker integration.</p></div>
+                <div class="card"><div class="anim-box anim-bridge"><div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div><h3>Cross-Chain Bridge</h3><p>Interoperable asset transfers.</p></div>
+                <div class="card"><div class="anim-box anim-contract"><div class="line"></div><div class="line"></div><div class="line"></div></div><h3>Smart Payments</h3><p>Programmable money flows.</p></div>
+                <div class="card"><div class="anim-box anim-stable"><div class="circle"><div class="inner"></div></div></div><h3>Stablecoin Hub</h3><p>Pegged currency management.</p></div>
+                <div class="card"><div class="anim-box anim-nft"><div class="sq"></div><div class="sq"></div><div class="sq"></div><div class="sq"></div></div><h3>NFT Checkout</h3><p>Instant digital asset purchasing.</p></div>
+                <div class="card"><div class="anim-box anim-wallet"><div class="rect"></div></div><h3>Wallet Connect</h3><p>Universal dApp authentication.</p></div>
+                <div class="card"><div class="anim-box anim-p2p"><div class="a1"></div><div class="a2"></div></div><h3>P2P Exchange</h3><p>Direct peer-to-peer trading.</p></div>
+                <div class="card"><div class="anim-box anim-dao"><div class="hex"></div></div><h3>DAO Treasury</h3><p>Decentralized fund governance.</p></div>
+                <div class="card"><div class="anim-box anim-api"><div class="node c"></div><div class="node t"></div></div><h3>Merchant API</h3><p>Plug-and-play crypto checkout.</p></div>
+                <div class="card"><div class="anim-box anim-swap"></div><h3>Instant Swaps</h3><p>Low latency token conversion.</p></div>
             </div>
         </section>
 
-        <!-- Pricing -->
-        <section class="pricing-section">
+        <!-- Action Zone (Pricing + Offer) -->
+        <section class="action-zone">
+            
+            <!-- Price Card -->
             <div class="price-card">
                 <div class="price">$369</div>
                 <div class="installments">Pay in full or <span>3 monthly installments</span></div>
                 
-                <div style="margin-top:20px;">
-                    <a href="https://www.spaceship.com/s/buy/rampay.cash/HXMwTAPGp00Cw1WL" target="_blank" class="btn btn-primary">
-                        ⚡ Buy Now on Spaceship
-                    </a>
-                    <button class="btn btn-secondary" onclick="copyEmail(this)">
-                        ✉️ Contact Seller
-                    </button>
-                </div>
+                <a href="https://www.spaceship.com/s/buy/rampay.cash/HXMwTAPGp00Cw1WL" target="_blank" class="btn btn-primary">
+                    ⚡ Buy Now on Spaceship
+                </a>
+                <button class="btn btn-secondary" onclick="copyEmail(this)">
+                    ✉️ Copy Contact Email
+                </button>
             </div>
+
+            <!-- Offer Box -->
+            <div class="offer-box">
+                <h3>Make a Counter Offer</h3>
+                <p>Price is negotiable. Enter your offer and email below. We will receive it instantly.</p>
+
+                <!-- FormSubmit Configuration -->
+                <form id="offerForm" action="https://formsubmit.co/joshua369x@gmail.com" method="POST">
+                    <!-- HoneyPot to stop bots -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Email Subject Line -->
+                    <input type="hidden" name="_subject" value="New Offer for RamPay.cash!">
+
+                    <div class="form-group">
+                        <input type="number" name="amount" class="offer-input" placeholder="Offer Amount ($ USD)" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="offer-input" placeholder="Your Email Address" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Offer</button>
+                </form>
+
+                <div id="form-status"></div>
+            </div>
+
         </section>
 
         <!-- Concise Disclaimer -->
@@ -402,18 +452,63 @@
     </main>
 
     <script>
+        // Copy Email Logic
         function copyEmail(btn) {
             const email = "joshua369x@gmail.com";
             navigator.clipboard.writeText(email).then(() => {
                 const originalText = btn.innerHTML;
                 btn.classList.add('copied');
                 btn.innerHTML = "✅ Email Copied!";
+                btn.style.color = "var(--accent-ramp)";
+                btn.style.borderColor = "var(--accent-ramp)";
                 setTimeout(() => {
                     btn.classList.remove('copied');
                     btn.innerHTML = originalText;
+                    btn.style.color = "";
+                    btn.style.borderColor = "";
                 }, 2000);
             });
         }
+
+        // AJAX Form Submission (FormSubmit.co)
+        const form = document.getElementById('offerForm');
+        const statusDiv = document.getElementById('form-status');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = form.querySelector('.btn-submit');
+            const originalBtnText = btn.innerHTML;
+            btn.innerText = "Sending...";
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+
+            fetch("https://formsubmit.co/ajax/joshua369x@gmail.com", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                statusDiv.innerText = "✓ Offer Sent Successfully!";
+                statusDiv.className = "status-success";
+                statusDiv.style.display = "block";
+                form.reset();
+                btn.innerText = "Sent";
+                setTimeout(() => {
+                    btn.innerText = originalBtnText;
+                    btn.disabled = false;
+                }, 3000);
+            })
+            .catch(error => {
+                statusDiv.innerText = "⚠ Error sending offer. Please email joshua369x@gmail.com directly.";
+                statusDiv.className = "status-error";
+                statusDiv.style.display = "block";
+                btn.innerText = originalBtnText;
+                btn.disabled = false;
+                console.log(error);
+            });
+        });
 
         // Lightweight Particle System
         const canvasContainer = document.getElementById('canvas-container');
